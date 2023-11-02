@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html><head>
+	  
+						  
+<meta charset="utf-8"><title>I-49 Connector Plans - Roundabouts Version</title>
+
+ <link rel="stylesheet" href="./css/leaflet.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+<![endif]-->
+<style type="text/css">
+html, body, #graphic {
+width: 100%;
+height: 95%;
+padding: 0;
+margin: 5;
+}
+</style>
+</head>
+
+<body>
+<div id="graphic"></div>
+<script src="./js/leaflet.js" type="text/javascript"></script>
+<script src="./js/L.TileLayer.Zoomify.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var map = L.map('graphic').setView(new L.LatLng(0,0), 0);
+
+L.tileLayer.zoomify('./data/', { width: 31600, height: 9304,
+						  
+						 
+tolerance: 0.8,
+attribution: 'Graphic by COREX10 for Louisiana DOTD.'
+}).addTo(map);
+
+</script>
+<center><font color="#000000" face="arial" size="2"><br>
+I-49 Connector - C6</font> 
+<font color="#576562" face="arial" size="2">
+|  State Project No. 700-24-0073<br>
+You are viewing an exhibit from Louisiana DOTD, provided as a PDF and reformatted for mobile device viewing.</a>.
+Use your mouse to click, pan and zoom around the image. You may need to
+enlarge your web browser's window for optimal use.<br>
+Project homepage is <a href="https://lafayetteconnector.com/" target="_blank">lafayetteconnector.com</a></font></center>
+</body></html>
